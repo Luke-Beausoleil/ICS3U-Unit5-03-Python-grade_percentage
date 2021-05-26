@@ -5,6 +5,7 @@
 # this program receives a level grade and returns a percentage
 
 def percentage(grade):
+    # this function assigns level grades a percentage
     if grade == "R":
         mark = 24
     elif grade == "1-":
