@@ -7,23 +7,23 @@
 def percentage(grade):
     # this function assigns level grades a percentage
     if grade == "R":
-        mark = 24
+        mark = 25
     elif grade == "1-":
         mark = 51
     elif grade == "1":
-        mark = 54
+        mark = 55
     elif grade == "1+":
         mark = 58
     elif grade == "2-":
         mark = 61
     elif grade == "2":
-        mark = 64
+        mark = 65
     elif grade == "2+":
         mark = 68
     elif grade == "3-":
         mark = 71
     elif grade == "3":
-        mark = 74
+        mark = 75
     elif grade == "3+":
         mark = 78
     elif grade == "4-":
@@ -44,7 +44,10 @@ def main():
     # input
     grade = input("Enter a level grade (i.e. R, 2, 3-, 4+, etc): ")
     # call function
-    print("The middle mark is {0}%\nDone.".format(percentage(grade)))
+    if percentage(grade) != -1:
+        print("The middle mark is {0}%\nDone.".format(percentage(grade)))
+    else:
+        print("Invalid grade\nDone.")
 
 
 if __name__ == "__main__":
